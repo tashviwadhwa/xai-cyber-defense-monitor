@@ -1,0 +1,43 @@
+feature,mean_abs_shap,label
+sbytes,0.06551189721703642,Bytes sent by source
+ct_dst_sport_ltm,0.045237442717502706,Same destination from same port (recent)
+smean,0.04402273357154169,Avg packet size from source
+ct_srv_dst,0.043058275626452536,"Same service + destination, recent connections"
+service,0.03726630393101646,"Service (http, dns, ...)"
+ct_dst_src_ltm,0.034917973614784034,Same source-destination pair (recent)
+sttl,0.029501466199050603,Source TTL (time-to-live)
+ct_state_ttl,0.02681458994894297,State/TTL combination count
+ct_src_dport_ltm,0.026125368191916576,Same source to same port (recent)
+ct_srv_src,0.024295703858972045,"Same service + source, recent connections"
+dttl,0.019914881783447087,Destination TTL
+dmean,0.019507592280606983,Avg packet size from destination
+dur,0.016810278842132938,Connection duration
+dload,0.01634946451169261,Destination bits per second
+ct_dst_ltm,0.016272940249453964,Connections to same destination (recent)
+dbytes,0.014027470647505615,Bytes sent by destination
+rate,0.013646118663614173,Packet rate
+sload,0.01197621040474995,Source bits per second
+proto,0.011633482969080143,Protocol
+dpkts,0.008992992477876292,Packets sent by destination
+dloss,0.006989027791701498,Destination packets lost
+sloss,0.006582403015320338,Source packets lost
+state,0.006099622077856708,Connection state
+synack,0.006054063172277362,SYN to SYN-ACK time
+dinpkt,0.005630604896376747,Gap between destination packets
+sinpkt,0.005144503213786128,Gap between source packets
+ct_src_ltm,0.004956450709598185,Connections from same source (recent)
+tcprtt,0.00457090111859494,TCP round-trip time
+sjit,0.004357502044065453,Source jitter
+spkts,0.004351383901430341,Packets sent by source
+swin,0.0033085208577323306,Source TCP window
+ackdat,0.003304229585454564,SYN-ACK to ACK time
+djit,0.0020374199223900757,Destination jitter
+trans_depth,0.001827297262494976,HTTP pipeline depth
+ct_flw_http_mthd,0.001473696389255395,HTTP GET/POST count
+response_body_len,0.0013843695793449887,HTTP response size
+stcpb,0.001284935488707926,Source TCP sequence number
+dtcpb,0.0009025573091070997,Destination TCP sequence number
+is_sm_ips_ports,0.0007386092331334666,Same IP and port on both ends
+is_ftp_login,0.00024400633528619077,FTP login attempted
+dwin,0.00023709496730672255,Destination TCP window
+ct_ftp_cmd,6.154154858024369e-05,FTP commands in session

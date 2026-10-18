@@ -1,0 +1,156 @@
+{
+  "accuracy": 0.8239073817082676,
+  "macro_f1": 0.5404938757033749,
+  "detection_rate": 0.9699187218948133,
+  "false_alarm_rate": 0.0844047619047619,
+  "train_rows": 122738,
+  "test_rows": 52603,
+  "feature_cols": [
+    "dur",
+    "proto",
+    "service",
+    "state",
+    "spkts",
+    "dpkts",
+    "sbytes",
+    "dbytes",
+    "rate",
+    "sttl",
+    "dttl",
+    "sload",
+    "dload",
+    "sloss",
+    "dloss",
+    "sinpkt",
+    "dinpkt",
+    "sjit",
+    "djit",
+    "swin",
+    "stcpb",
+    "dtcpb",
+    "dwin",
+    "tcprtt",
+    "synack",
+    "ackdat",
+    "smean",
+    "dmean",
+    "trans_depth",
+    "response_body_len",
+    "ct_srv_src",
+    "ct_state_ttl",
+    "ct_dst_ltm",
+    "ct_src_dport_ltm",
+    "ct_dst_sport_ltm",
+    "ct_dst_src_ltm",
+    "is_ftp_login",
+    "ct_ftp_cmd",
+    "ct_flw_http_mthd",
+    "ct_src_ltm",
+    "ct_srv_dst",
+    "is_sm_ips_ports"
+  ],
+  "classes": [
+    "Analysis",
+    "Backdoor",
+    "DoS",
+    "Exploits",
+    "Fuzzers",
+    "Generic",
+    "Normal",
+    "Reconnaissance",
+    "Shellcode",
+    "Worms"
+  ],
+  "per_class": {
+    "Analysis": {
+      "precision": 0.8571428571428571,
+      "recall": 0.09,
+      "f1-score": 0.16289592760180996,
+      "support": 600.0
+    },
+    "Backdoor": {
+      "precision": 0.8135593220338984,
+      "recall": 0.0916030534351145,
+      "f1-score": 0.1646655231560892,
+      "support": 524.0
+    },
+    "DoS": {
+      "precision": 0.38530465949820786,
+      "recall": 0.058439793422125574,
+      "f1-score": 0.10148690110927543,
+      "support": 3679.0
+    },
+    "Exploits": {
+      "precision": 0.6113060428849902,
+      "recall": 0.9391096027151128,
+      "f1-score": 0.7405541561712846,
+      "support": 10018.0
+    },
+    "Fuzzers": {
+      "precision": 0.722464558342421,
+      "recall": 0.7286892758936755,
+      "f1-score": 0.7255635666697089,
+      "support": 5455.0
+    },
+    "Generic": {
+      "precision": 0.9998297292695386,
+      "recall": 0.9786666666666667,
+      "f1-score": 0.9891350122125832,
+      "support": 12000.0
+    },
+    "Normal": {
+      "precision": 0.9345646758612309,
+      "recall": 0.9155952380952381,
+      "f1-score": 0.9249827114465258,
+      "support": 16800.0
+    },
+    "Reconnaissance": {
+      "precision": 0.9167993630573248,
+      "recall": 0.7315756035578145,
+      "f1-score": 0.8137809187279152,
+      "support": 3148.0
+    },
+    "Shellcode": {
+      "precision": 0.6688102893890675,
+      "recall": 0.611764705882353,
+      "f1-score": 0.6390168970814132,
+      "support": 340.0
+    },
+    "Worms": {
+      "precision": 1.0,
+      "recall": 0.07692307692307693,
+      "f1-score": 0.14285714285714285,
+      "support": 39.0
+    }
+  },
+  "comparison": {
+    "Logistic Regression": {
+      "accuracy": 0.7675988061517404,
+      "macro_f1": 0.4206850027064596,
+      "detection_rate": 0.9665670474541239,
+      "false_alarm_rate": 0.11904761904761904,
+      "train_seconds": 28.9
+    },
+    "Decision Tree": {
+      "accuracy": 0.8143451894378647,
+      "macro_f1": 0.6162094842559442,
+      "detection_rate": 0.9839398933050303,
+      "false_alarm_rate": 0.14029761904761906,
+      "train_seconds": 2.9
+    },
+    "Gradient Boosting": {
+      "accuracy": 0.8236032165465847,
+      "macro_f1": 0.5491353372615795,
+      "detection_rate": 0.9672653129626009,
+      "false_alarm_rate": 0.08577380952380953,
+      "train_seconds": 10.7
+    },
+    "Random Forest (chosen)": {
+      "accuracy": 0.8239073817082676,
+      "macro_f1": 0.5404938757033749,
+      "detection_rate": 0.9699187218948133,
+      "false_alarm_rate": 0.0844047619047619,
+      "train_seconds": 5.9
+    }
+  }
+}

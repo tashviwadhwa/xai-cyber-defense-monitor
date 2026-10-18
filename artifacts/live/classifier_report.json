@@ -1,0 +1,62 @@
+{
+  "accuracy": 0.9911111111111112,
+  "classes": [
+    "Brute force",
+    "Normal",
+    "Port scan",
+    "Traffic flood"
+  ],
+  "per_class": {
+    "Brute force": {
+      "precision": 0.9800884955752213,
+      "recall": 0.9844444444444445,
+      "f1-score": 0.9822616407982262,
+      "support": 450.0
+    },
+    "Normal": {
+      "precision": 0.984375,
+      "recall": 0.98,
+      "f1-score": 0.9821826280623608,
+      "support": 450.0
+    },
+    "Port scan": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 450.0
+    },
+    "Traffic flood": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 450.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      443,
+      7,
+      0,
+      0
+    ],
+    [
+      9,
+      441,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      450,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      450
+    ]
+  ],
+  "test_rows": 1800
+}
