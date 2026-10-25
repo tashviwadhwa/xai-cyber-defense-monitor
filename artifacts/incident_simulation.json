@@ -1,0 +1,410 @@
+{
+  "baseline_browsing_plus_streaming": {
+    "detail_seed42": [
+      {
+        "stage": "S1a",
+        "window": 1,
+        "desc": "Valid-credential login from VPN IP",
+        "max_deviation": 0.51,
+        "risk": 0,
+        "severity": "Low",
+        "alert": false,
+        "label": "",
+        "top_feature": ""
+      },
+      {
+        "stage": "S1b",
+        "window": 1,
+        "desc": "Stale credentials: 6 failed logins then success",
+        "max_deviation": 0.52,
+        "risk": 15,
+        "severity": "Low",
+        "alert": false,
+        "label": "",
+        "top_feature": ""
+      },
+      {
+        "stage": "S1c",
+        "window": 1,
+        "desc": "Stale credentials: 12 failed logins then success",
+        "max_deviation": 0.54,
+        "risk": 60,
+        "severity": "High",
+        "alert": true,
+        "label": "Brute force",
+        "top_feature": "failed logins"
+      },
+      {
+        "stage": "S2",
+        "window": 1,
+        "desc": "Recon queries (SHOW TABLES / LIST)",
+        "max_deviation": 0.64,
+        "risk": 3,
+        "severity": "Low",
+        "alert": false,
+        "label": "",
+        "top_feature": ""
+      },
+      {
+        "stage": "S2",
+        "window": 2,
+        "desc": "Recon queries (SHOW TABLES / LIST)",
+        "max_deviation": 0.67,
+        "risk": 3,
+        "severity": "Low",
+        "alert": false,
+        "label": "",
+        "top_feature": ""
+      },
+      {
+        "stage": "S2",
+        "window": 3,
+        "desc": "Recon queries (SHOW TABLES / LIST)",
+        "max_deviation": 0.16,
+        "risk": 3,
+        "severity": "Low",
+        "alert": false,
+        "label": "",
+        "top_feature": ""
+      },
+      {
+        "stage": "S4",
+        "window": 1,
+        "desc": "Bulk exfiltration (GET) at full scale",
+        "max_deviation": 5.56,
+        "risk": 34,
+        "severity": "Low",
+        "alert": false,
+        "label": "",
+        "top_feature": ""
+      },
+      {
+        "stage": "S4",
+        "window": 2,
+        "desc": "Bulk exfiltration (GET) at full scale",
+        "max_deviation": 5.57,
+        "risk": 34,
+        "severity": "Low",
+        "alert": false,
+        "label": "",
+        "top_feature": ""
+      },
+      {
+        "stage": "S4",
+        "window": 3,
+        "desc": "Bulk exfiltration (GET) at full scale",
+        "max_deviation": 5.5,
+        "risk": 33,
+        "severity": "Low",
+        "alert": false,
+        "label": "",
+        "top_feature": ""
+      },
+      {
+        "stage": "S4",
+        "window": 4,
+        "desc": "Bulk exfiltration (GET) at full scale",
+        "max_deviation": 5.59,
+        "risk": 34,
+        "severity": "Low",
+        "alert": false,
+        "label": "",
+        "top_feature": ""
+      },
+      {
+        "stage": "S4",
+        "window": 5,
+        "desc": "Bulk exfiltration (GET) at full scale",
+        "max_deviation": 5.41,
+        "risk": 32,
+        "severity": "Low",
+        "alert": false,
+        "label": "",
+        "top_feature": ""
+      },
+      {
+        "stage": "S4",
+        "window": 6,
+        "desc": "Bulk exfiltration (GET) at full scale",
+        "max_deviation": 5.59,
+        "risk": 34,
+        "severity": "Low",
+        "alert": false,
+        "label": "",
+        "top_feature": ""
+      }
+    ],
+    "stability_30_seeds": {
+      "S1a": {
+        "alert_rate": 0.0,
+        "median_risk": 0,
+        "labels": []
+      },
+      "S1b": {
+        "alert_rate": 0.0,
+        "median_risk": 15,
+        "labels": []
+      },
+      "S1c": {
+        "alert_rate": 1.0,
+        "median_risk": 60,
+        "labels": [
+          "Brute force"
+        ]
+      },
+      "S2": {
+        "alert_rate": 0.0,
+        "median_risk": 3,
+        "labels": []
+      },
+      "S4": {
+        "alert_rate": 0.378,
+        "median_risk": 37,
+        "labels": [
+          "Traffic flood"
+        ]
+      }
+    },
+    "exfil_rate_sweep": {
+      "1.0": {
+        "first_window_alert_rate": 0.167,
+        "any_alert_rate": 0.2,
+        "median_peak_risk": 35
+      },
+      "0.5": {
+        "first_window_alert_rate": 0.0,
+        "any_alert_rate": 0.0,
+        "median_peak_risk": 26
+      },
+      "0.25": {
+        "first_window_alert_rate": 0.0,
+        "any_alert_rate": 0.0,
+        "median_peak_risk": 17
+      },
+      "0.1": {
+        "first_window_alert_rate": 0.0,
+        "any_alert_rate": 0.0,
+        "median_peak_risk": 6
+      },
+      "0.05": {
+        "first_window_alert_rate": 0.0,
+        "any_alert_rate": 0.0,
+        "median_peak_risk": 0
+      },
+      "0.02": {
+        "first_window_alert_rate": 0.0,
+        "any_alert_rate": 0.0,
+        "median_peak_risk": 0
+      },
+      "0.01": {
+        "first_window_alert_rate": 0.0,
+        "any_alert_rate": 0.0,
+        "median_peak_risk": 0
+      }
+    }
+  },
+  "baseline_browsing_only": {
+    "detail_seed42": [
+      {
+        "stage": "S1a",
+        "window": 1,
+        "desc": "Valid-credential login from VPN IP",
+        "max_deviation": 0.4,
+        "risk": 0,
+        "severity": "Low",
+        "alert": false,
+        "label": "",
+        "top_feature": ""
+      },
+      {
+        "stage": "S1b",
+        "window": 1,
+        "desc": "Stale credentials: 6 failed logins then success",
+        "max_deviation": 0.6,
+        "risk": 15,
+        "severity": "Low",
+        "alert": false,
+        "label": "",
+        "top_feature": ""
+      },
+      {
+        "stage": "S1c",
+        "window": 1,
+        "desc": "Stale credentials: 12 failed logins then success",
+        "max_deviation": 0.19,
+        "risk": 60,
+        "severity": "High",
+        "alert": true,
+        "label": "Brute force",
+        "top_feature": "failed logins"
+      },
+      {
+        "stage": "S2",
+        "window": 1,
+        "desc": "Recon queries (SHOW TABLES / LIST)",
+        "max_deviation": 0.19,
+        "risk": 3,
+        "severity": "Low",
+        "alert": false,
+        "label": "",
+        "top_feature": ""
+      },
+      {
+        "stage": "S2",
+        "window": 2,
+        "desc": "Recon queries (SHOW TABLES / LIST)",
+        "max_deviation": 0.7,
+        "risk": 3,
+        "severity": "Low",
+        "alert": false,
+        "label": "",
+        "top_feature": ""
+      },
+      {
+        "stage": "S2",
+        "window": 3,
+        "desc": "Recon queries (SHOW TABLES / LIST)",
+        "max_deviation": 0.34,
+        "risk": 3,
+        "severity": "Low",
+        "alert": false,
+        "label": "",
+        "top_feature": ""
+      },
+      {
+        "stage": "S4",
+        "window": 1,
+        "desc": "Bulk exfiltration (GET) at full scale",
+        "max_deviation": 5.56,
+        "risk": 34,
+        "severity": "Low",
+        "alert": false,
+        "label": "",
+        "top_feature": ""
+      },
+      {
+        "stage": "S4",
+        "window": 2,
+        "desc": "Bulk exfiltration (GET) at full scale",
+        "max_deviation": 5.38,
+        "risk": 32,
+        "severity": "Low",
+        "alert": false,
+        "label": "",
+        "top_feature": ""
+      },
+      {
+        "stage": "S4",
+        "window": 3,
+        "desc": "Bulk exfiltration (GET) at full scale",
+        "max_deviation": 5.47,
+        "risk": 33,
+        "severity": "Low",
+        "alert": false,
+        "label": "",
+        "top_feature": ""
+      },
+      {
+        "stage": "S4",
+        "window": 4,
+        "desc": "Bulk exfiltration (GET) at full scale",
+        "max_deviation": 5.39,
+        "risk": 32,
+        "severity": "Low",
+        "alert": false,
+        "label": "",
+        "top_feature": ""
+      },
+      {
+        "stage": "S4",
+        "window": 5,
+        "desc": "Bulk exfiltration (GET) at full scale",
+        "max_deviation": 5.4,
+        "risk": 32,
+        "severity": "Low",
+        "alert": false,
+        "label": "",
+        "top_feature": ""
+      },
+      {
+        "stage": "S4",
+        "window": 6,
+        "desc": "Bulk exfiltration (GET) at full scale",
+        "max_deviation": 5.34,
+        "risk": 31,
+        "severity": "Low",
+        "alert": false,
+        "label": "",
+        "top_feature": ""
+      }
+    ],
+    "stability_30_seeds": {
+      "S1a": {
+        "alert_rate": 0.0,
+        "median_risk": 0,
+        "labels": []
+      },
+      "S1b": {
+        "alert_rate": 0.0,
+        "median_risk": 15,
+        "labels": []
+      },
+      "S1c": {
+        "alert_rate": 1.0,
+        "median_risk": 60,
+        "labels": [
+          "Brute force"
+        ]
+      },
+      "S2": {
+        "alert_rate": 0.0,
+        "median_risk": 3,
+        "labels": []
+      },
+      "S4": {
+        "alert_rate": 0.467,
+        "median_risk": 38,
+        "labels": [
+          "Traffic flood"
+        ]
+      }
+    },
+    "exfil_rate_sweep": {
+      "1.0": {
+        "first_window_alert_rate": 0.233,
+        "any_alert_rate": 0.233,
+        "median_peak_risk": 36
+      },
+      "0.5": {
+        "first_window_alert_rate": 0.0,
+        "any_alert_rate": 0.0,
+        "median_peak_risk": 26
+      },
+      "0.25": {
+        "first_window_alert_rate": 0.0,
+        "any_alert_rate": 0.0,
+        "median_peak_risk": 15
+      },
+      "0.1": {
+        "first_window_alert_rate": 0.0,
+        "any_alert_rate": 0.0,
+        "median_peak_risk": 3
+      },
+      "0.05": {
+        "first_window_alert_rate": 0.0,
+        "any_alert_rate": 0.0,
+        "median_peak_risk": 0
+      },
+      "0.02": {
+        "first_window_alert_rate": 0.0,
+        "any_alert_rate": 0.0,
+        "median_peak_risk": 0
+      },
+      "0.01": {
+        "first_window_alert_rate": 0.0,
+        "any_alert_rate": 0.0,
+        "median_peak_risk": 0
+      }
+    }
+  }
+}
