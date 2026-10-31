@@ -42,7 +42,7 @@ A multi-source threat monitoring system with explainable alerts. It combines net
 
 ## Quick start
 
-Requires Python 3.10–3.13.
+Requires Python 3.11–3.13.
 
 ```bash
 git clone https://github.com/tashviwadhwa/xai-cyber-defense-monitor.git
@@ -126,6 +126,8 @@ With correlation applied in the replay, 99.6% of real attacks raised an alert an
 
 **Live mode** (tested with a real port scan and brute-force attempts): a 1,000-port scan scored about 9 "spreads" above normal (anything above 3 is unusual) and was labelled *Port scan*. Brute-force sources were flagged High, and normal traffic stayed at a score of 0.
 
+**Case study (Review 3):** `python simulate_incident.py` replays a scaled-down version of the 2024 Snowflake data theft through the live detector and writes `artifacts/incident_simulation.json`. A login with a stolen but valid password is not detected; 12 failed logins first raise a High alert; bulk data theft alerts in about 38% of windows and is labelled Traffic flood.
+
 ## Limitations
 
 - The replay's login log and IP addresses are simulated; UNSW-NB15 has neither.
@@ -152,6 +154,7 @@ With correlation applied in the replay, 99.6% of real attacks raised an alert an
 | `live_monitor.py`                           | Real-time capture, baseline learning, detection and scoring   |
 | `login_reader.py`                           | Reads real failed logins from Windows or Linux                |
 | `attack_demo.py`                            | Port scan, brute force and flood, for testing your own laptop |
+| `simulate_incident.py`                      | Review 3 case study: replays the 2024 Snowflake (UNC5537) attack against the live detector |
 | `app.py`                                    | Dashboard entry point: sidebar and tabs                       |
 | `ui_replay.py`, `ui_live.py`, `ui_model.py` | One file per dashboard tab                                    |
 | `ui_common.py`                              | Charts, response panel, incident report                       |
@@ -183,3 +186,5 @@ A 5-minute tour of the dashboard:
 ## Dataset and citation
 
 Moustafa, N. and Slay, J. (2015). UNSW-NB15: a comprehensive data set for network intrusion detection systems. *Military Communications and Information Systems Conference (MilCIS)*, IEEE.
+
+Only the UNSW-NB15 training partition is included in `data/`. The full dataset and its terms of use are on the [UNSW-NB15 project page](https://research.unsw.edu.au/projects/unsw-nb15-dataset).
