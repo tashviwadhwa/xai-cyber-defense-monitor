@@ -1,0 +1,9 @@
+venv/
+__pycache__/
+*.pyc
+artifacts/live/windows.csv
+artifacts/live/logins.csv
+artifacts/live/status.json
+.env
+artifacts/live/baseline.joblib
+artifacts/live/ip_reputation_cache.json

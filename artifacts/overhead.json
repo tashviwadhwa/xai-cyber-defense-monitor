@@ -3,14 +3,14 @@
     "flows_scored": 3000,
     "alerts_explained": 2200,
     "shap_sample_size": 500,
-    "detect_total_ms": 58.8,
-    "detect_per_flow_ms": 0.0196,
-    "shap_per_alert_ms": 44.18,
-    "overhead_factor_per_alert": 2252.4
+    "detect_total_ms": 61.5,
+    "detect_per_flow_ms": 0.0205,
+    "shap_per_alert_ms": 77.29,
+    "overhead_factor_per_alert": 3772.6
   },
   "live": {
-    "classify_per_window_ms": 2.744,
-    "deviation_explain_per_window_ms": 0.0182,
+    "classify_per_window_ms": 2.329,
+    "deviation_explain_per_window_ms": 0.0191,
     "note": "live explanation is exact arithmetic, far cheaper than SHAP"
   }
 }
